@@ -1,8 +1,8 @@
 import boto3
 import time
 
-CLUSTER = "gogreen-Cluster"
-SERVICE = "gogreen-svc"
+CLUSTER = "gogreen_Cluster"
+SERVICE = "gogreeen_svc"
 REGION = "us-east-1"
 
 def deploy():
