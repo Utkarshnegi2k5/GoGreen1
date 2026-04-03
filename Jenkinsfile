@@ -85,9 +85,8 @@ pipeline{
         stage("Deploy image"){
             steps{
                 withAWS(credentials: 'aws', region: 'us-east-1'){
-                    sh'''
-                    . /opt/jenkins-venv/bin/activate
-                    python pipeline/deploy.py
+                    sh '''
+                    /opt/jenkins-venv/bin/python3 pipeline/deploy.py
                     '''
                 }
             }
